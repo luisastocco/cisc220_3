@@ -20,13 +20,14 @@ do
   students+=( ["$first"]=$second )
 done
 
-for i in "$(!courses[@])"
+for i in "${(!courses[@])}"
 do
   grep $i student_course.txt #key
-  $(courses[$i]} | sed #value
+  ${(courses[$i]} | sed #value
 done
-for i in "${!students[@])"
+for i in "${!students[@])}"
 do
-  grep $i student_course.txt #key
-  $(students[$i]) | sed #value
+	grep $i | student.course.txt #key
+	${(students[$1]} | sed #value
 done
+
