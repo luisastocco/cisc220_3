@@ -3,7 +3,7 @@
 #Luisa Aimoli 10169687
 #Outputs numbers whose sum of digits is 7 in successive additions, meaning it is a "lucky number"
 
-for number in {1000..1249};
+for number in {1000..10000};
 do
 	int=$number
 	digit=0
