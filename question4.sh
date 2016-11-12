@@ -4,6 +4,6 @@
 #Display only the two partitions with largest sizes
 #Sorts only partitions
 
-lsblk --noheadings --raw | grep 'part'| sort -k4g
+lsblk --noheadings --raw --sort SIZE | grep 'part'| tail -2
 
 
