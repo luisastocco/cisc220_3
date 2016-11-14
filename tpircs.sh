@@ -7,12 +7,9 @@
 #Reverse letters of each word
 
 echo "Insert a list of words: "
-read -a list
+read -a list #reads input
 
-index=0
-newlist=()
-
-for word in ${list[@]} ; do
-	reverse=$(echo "$word" | rev)
-	printf "%s " $reverse
+for word in ${list[@]} ; do #iterates over input
+	reverse=$(echo "$word" | rev) #rev command reverses string
+	printf "%s " $reverse #prints reverse as a string
 done
