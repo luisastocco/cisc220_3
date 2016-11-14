@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Luisa Aimoli 10169687
+#Braedan Robinson 10188414
 #Outputs numbers whose sum of digits is 7 in successive additions, meaning it is a "lucky number"
 
 for number in {1000..10000};

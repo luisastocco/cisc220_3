@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Luisa Aimoli 10169687
+#Braedan Robinson 10188414
 #Checks and validates password
 #Takes user's hidden inpuy and checks for the following 3 conditions:
 #Minimum length of 8 char

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Luisa Aimoli 10169687
+#Braedan Robinson 10188414
 #Reads a number of words from users
 #Use read command
 #Store them in an array

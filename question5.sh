@@ -2,6 +2,7 @@
 #Developed in cisc220
 
 #Luisa Aimoli 10169687
+#Braedan Robinson 10188414
 #Looks for all executable files in the current directory (. is current dir, f is file, -exec is executable)
 #Adds "#Developed in cisc220" after #!/bin/bash
 
