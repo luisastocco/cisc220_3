@@ -8,18 +8,17 @@ do
 	int=$number
 	digit=0
 	sum=0
-	sum2=0
 
-	while [ $number -gt 9 ] #checks if input is greater than 0
+	while [ $number -gt 9 ] #otherwise no need to sum digits
 	do
 		sum=0
-		while [ $number -gt 0 ]
+		while [ $number -gt 0 ] #while there are still digits to sum
 		do
 			digit=$(( $number % 10 )) #get remainder
 			number=$(( $number / 10 )) #get next digit
 			sum=$(( $sum + $digit )) #calculate sum of digit	
 		done
-		number=$sum
+		number=$sum #for recursion
 	done
 	
 	if [[ $sum -eq 7 ]]
