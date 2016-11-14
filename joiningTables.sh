@@ -7,20 +7,17 @@
 #sort output by student name, then course name
 
 cat student_course.txt > final.txt #copy file content to final.txt
-
-while read line #reads the file per line
-do
+i=0
+while read -r line || [[ -n $line ]]; do #reads the file per line
   first=$(echo $line | awk '{print $1}') #get studentID
   second=$(echo $line | awk '{print $2}') #get studentName
   sed -i "s/$first/$second/" final.txt #replaces match of ID for name
 done < student.txt
 
-while read line #reads the file per line
-do
+while read -r line || [[ -n $line ]]; do #reads the file per line
   first=$(echo $line | awk '{print $1}') #get courseID
   second=$(echo $line | awk '{print $2}') #get courseName
   sed -i "s/\<$first\>/$second/" final.txt #replaces exact match of ID for name
 done < course.txt
 
-tail -10 final.txt | sort #sorts student names
-#tail -10 final.txt | sort -k2 #sorts course names #couldn't figure out how to sort it without unsorting the students
+tail -10 final.txt | sort #sorts student names by name and course number
