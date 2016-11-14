@@ -7,7 +7,7 @@
 #sort output by student name, then course name
 
 cat student_course.txt > final.txt #copy file content to final.txt
-i=0
+
 while read -r line || [[ -n $line ]]; do #reads the file per line
   first=$(echo $line | awk '{print $1}') #get studentID
   second=$(echo $line | awk '{print $2}') #get studentName
